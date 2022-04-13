@@ -44,7 +44,7 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 
-print("\nFirst & Last Names")
+print("\nCharlotte Osburn and Zachary Beach")
 print("Program Name: ")
 print("Date: ")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
@@ -61,6 +61,7 @@ try:
         sendmsg('takeoff', 8)
         sendmsg('forward 210', 6)
         sendmsg('go 230, 0, 60, 50', 6)
+        sendmsg('ccw 90')
         sendmsg('land')
 
         print('\nGreat Flight!!!')
