@@ -61,7 +61,9 @@ try:
         sendmsg('takeoff', 8)
         # sendmsg('forward 210', 6)
         # sendmsg('go 250, 0, 60, 50', 8)
-        sendmsg('curve -155, 205, 0, -155, 0, 0, 50', 7)
+        sendmsg('curve 136, 186, 0, -136, 186, 0, 50', 8)
+        sendmsg('ccw 90', 7)
+        sendmsg('curve 136, 186, 0, -136, 186, 0, 50', 7)
         sendmsg('land')
 
         print('\nGreat Flight!!!')
