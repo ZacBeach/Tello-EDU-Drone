@@ -60,7 +60,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff', 8)
         sendmsg('forward 210', 6)
-        sendmsg('go 250, 0, 50', 6)
+        sendmsg('go 230, 0, 60, 50', 6)
         sendmsg('land')
 
         print('\nGreat Flight!!!')
