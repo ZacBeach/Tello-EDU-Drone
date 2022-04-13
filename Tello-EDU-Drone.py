@@ -58,9 +58,9 @@ try:
         print("\nStarting Drone!\n")
 
         sendmsg('command', 0)
-        sendmsg('takeoff')
-        sendmsg('forward 200', 6)
-
+        sendmsg('takeoff', 8)
+        sendmsg('forward 210', 6)
+        sendmsg('go 250, 0, 50', 6)
         sendmsg('land')
 
         print('\nGreat Flight!!!')
