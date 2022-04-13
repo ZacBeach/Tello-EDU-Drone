@@ -51,6 +51,7 @@ print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
 
+#D78
 
 try:
     if ready.lower() == 'yes':
@@ -58,9 +59,7 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
-
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+        sendmsg('forward 200', 6)
 
         sendmsg('land')
 
